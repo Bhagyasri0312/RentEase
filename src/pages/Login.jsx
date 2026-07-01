@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Mail,
   Lock,
@@ -225,12 +225,12 @@ const LoginPage = () => {
               />
               <span className="text-sm text-secondary-600">Remember me</span>
             </label>
-            <a
-              href="#"
-              className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
-            >
-              Forgot password?
-            </a>
+            <Link
+  to="/forgot-password"
+  className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors"
+>
+  Forgot password?
+</Link>
           </div>
 
           {/* Submit Button */}
@@ -266,15 +266,14 @@ const LoginPage = () => {
 
           {/* Register Link */}
           <p className="text-center text-secondary-600">
-            <a
-              href="/register"
-              className="font-medium text-primary-600 hover:text-primary-700 transition-colors"
-            >
-              Create Account
-            </a>
-          </p>
-        </form>
-
+  <Link
+    to="/register"
+    className="font-medium text-primary-600 hover:text-primary-700 transition-colors"
+  >
+    Create Account
+  </Link>
+</p>
+</form>
         {/* Footer */}
         <p className="text-center text-xs text-secondary-500 mt-6">
           By signing in, you agree to our{" "}
