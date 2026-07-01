@@ -1,0 +1,10 @@
+export { default as Home } from "./Home";
+export { default as Products } from "./Products";
+export { default as ProductDetails } from "./ProductDetails";
+export { default as Cart } from "./Cart";
+export { default as Auth } from "./Auth";
+export { default as Login } from "./Login";
+export { default as Register } from "./Register";
+export { default as Wishlist } from "./Wishlist";
+export { default as Reviews } from "./Reviews";
+export { default as RentalExtension } from "./RentalExtension";
